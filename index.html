@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nature & Landscapes | Photo Gallery</title>
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js" defer></script>
+</head>
+
+<body onload="addTabIndex()">
+
+    <header>
+        <h1>Nature & Landscapes</h1>
+        <p>Discover the beauty of our planet through photography.</p>
+    </header>
+
+    <main>
+
+        <section class="gallery-section">
+
+            <h2>Explore the World</h2>
+
+            <p class="description">
+                Move your mouse or use your keyboard to discover
+                six beautiful natural landscapes.
+            </p>
+
+            <!-- Main image preview -->
+            <div id="image">
+                Hover over or focus on an image below to display it here.
+            </div>
+
+            <!-- Six gallery images -->
+            <div class="gallery">
+
+                <figure class="gallery-item"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600"
+                         alt="Beautiful mountain lake surrounded by green forests">
+
+                    <figcaption>Mountain Lake</figcaption>
+                </figure>
+
+                <figure class="gallery-item"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600"
+                         alt="Sunlight shining through a dense green forest">
+
+                    <figcaption>Green Forest</figcaption>
+                </figure>
+
+                <figure class="gallery-item"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                         alt="Golden sunset illuminating a peaceful natural landscape">
+
+                    <figcaption>Golden Sunset</figcaption>
+                </figure>
+
+                <figure class="gallery-item"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600"
+                         alt="Majestic snow-covered mountain peaks under a blue sky">
+
+                    <figcaption>Snowy Mountains</figcaption>
+                </figure>
+
+                <figure class="gallery-item"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=600"
+                         alt="Warm morning sunlight spreading over a green valley">
+
+                    <figcaption>Morning Valley</figcaption>
+                </figure>
+
+                <figure class="gallery-item"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600"
+                         alt="Peaceful turquoise lake surrounded by mountains">
+
+                    <figcaption>Turquoise Lake</figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Nature & Landscapes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

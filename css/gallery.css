@@ -1,0 +1,149 @@
+
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f2;
+    color: #26382d;
+}
+
+/* Header */
+header {
+    background-color: #183b2b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #d5e5d9;
+}
+
+/* Main section */
+.gallery-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.description {
+    text-align: center;
+    color: #657568;
+    margin-bottom: 30px;
+}
+
+/* Main image preview */
+#image {
+    width: 100%;
+    height: 420px;
+    background-color: #dce5dd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #26382d;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Individual images */
+.gallery-item {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyboard focus */
+.gallery-item:focus {
+    outline: 4px solid #e49b32;
+    outline-offset: 4px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item figcaption {
+    text-align: center;
+    padding: 14px;
+    font-weight: bold;
+    color: #31533d;
+}
+
+/* Footer */
+footer {
+    background-color: #183b2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #image {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+}
